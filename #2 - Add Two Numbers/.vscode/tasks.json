@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/CSharp/Program/Program.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/CSharp/Program"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        // {
+        //     "label": "build",
+        //     "command": "dotnet build",
+        //     "type": "shell",
+        //     "group": "build",
+        //     "presentation": {
+        //         "reveal": "silent"
+        //     },
+        //     "problemMatcher": "$msCompile"
+        // }
+    ]
+}
